@@ -2,18 +2,19 @@ USE Clinic;
 
 -- Insert data into HOSPITAL_PATIENTS
 INSERT INTO HOSPITAL_PATIENTS (first_name, last_name, gender, date_of_birth, phone_number, email, address) VALUES
-('John', 'Doe', 'Male', '1998-01-01', '1234567890', 'john.doe@example.com', '123 Main St'),
+('John', 'Doe', 'Male', '2010-01-01', '1234567890', 'john.doe@example.com', '123 Main St'),
 ('Jane', 'Smith', 'Female', '1999-02-02', '1234567891', 'jane.smith@example.com', '456 Oak St'),
 ('Alice', 'Johnson', 'Female', '1990-03-03', '1234567892', 'alice.johnson@example.com', '789 Pine St'),
-('Bob', 'Brown', 'Male', '1975-04-04', '1234567893', 'bob.brown@example.com', '101 Maple St'),
+('Bob', 'Brown', 'Male', '2009-04-04', '1234567893', 'bob.brown@example.com', '101 Maple St'),
 ('Charlie', 'Davis', 'Male', '2000-05-05', '1234567894', 'charlie.davis@example.com', '202 Birch St'),
 ('Eve', 'Miller', 'Female', '1995-06-06', '1234567895', 'eve.miller@example.com', '303 Cedar St'),
 ('Frank', 'Wilson', 'Male', '1982-07-07', '1234567896', 'frank.wilson@example.com', '404 Elm St'),
-('Grace', 'Moore', 'Female', '1992-08-08', '1234567897', 'grace.moore@example.com', '505 Ash St'),
+('Grace', 'Moore', 'Female', '2012-08-08', '1234567897', 'grace.moore@example.com', '505 Ash St'),
 ('Hank', 'Taylor', 'Male', '2000-09-09', '1234567898', 'hank.taylor@example.com', '606 Willow St'),
 ('Ivy', 'Anderson', 'Female', '1978-10-10', '1234567899', 'ivy.anderson@example.com', '707 Spruce St'),
-('Jack', 'Thomas', 'Male', '1998-11-11', '1234567800', 'jack.thomas@example.com', '808 Fir St'),
+('Jack', 'Thomas', 'Male', '2012-11-11', '1234567800', 'jack.thomas@example.com', '808 Fir St'),
 ('Karen', 'Jackson', 'Female', '1983-12-12', '1234567801', 'karen.jackson@example.com', '909 Poplar St');
+
 
 -- Insert data into HOSPITAL_ROOMS
 INSERT INTO HOSPITAL_ROOMS (room_number, rom_type, availability) VALUES
