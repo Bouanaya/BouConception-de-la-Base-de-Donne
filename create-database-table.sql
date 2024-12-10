@@ -14,7 +14,7 @@ CREATE Table HOSPITAL_PATIENTS(
 CREATE Table HOSPITAL_ROOMS(
     room_id int(11) AUTO_INCREMENT PRIMARY KEY,
     room_number VARCHAR(10),
-    rom_type ENUM('General', 'Private','ICU'),
+    rom_type ENUM('General','Private','ICU'),
     availability TINYINT(1));
 
 CREATE Table HOSPITAL_DEPARTMENTS(
