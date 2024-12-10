@@ -40,5 +40,16 @@ FROM hospital_patients;
 -- chalange 10
 -- SELECT * FROM hospital_departments;
 SELECT count(*) FROM hospital_appointments
+-- chalange 11
+SELECT * FROM hospital_doctors;
+SELECT * FROM hospital_departments
+
+SELECT COUNT(doctor_id),departement_id
+FROM hospital_doctors
+GROUP BY departement_id; 
+-- chalange 12
+SELECT * FROM hospital_patients ;
+
+SELECT AVG(TIMESTAMPDIFF(YEAR ,date_of_birth,CURDATE())) FROM  hospital_patients
 
 
