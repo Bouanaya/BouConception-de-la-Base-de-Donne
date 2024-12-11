@@ -5,10 +5,10 @@ INSERT INTO HOSPITAL_PATIENTS (first_name, last_name, gender, date_of_birth, pho
 ('John', 'Doe', 'Male', '2010-01-01', '1234567890', 'john.doe@example.com', '123 Main St'),
 ('Jane', 'Smith', 'Female', '1999-02-02', '1234567891', 'jane.smith@example.com', '456 Oak St'),
 ('Alice', 'Johnson', 'Female', '1990-03-03', '1234567892', 'alice.johnson@example.com', '789 Pine St'),
-('Bob', 'Brown', 'Male', '2009-04-04', '1234567893', 'bob.brown@example.com', '101 Maple St'),
+('Bob', 'Brown', 'Male', '2009-04-04', '1234567893', NULL, '101 Maple St'),
 ('Charlie', 'Davis', 'Male', '2000-05-05', '1234567894', 'charlie.davis@example.com', '202 Birch St'),
-('Eve', 'Miller', 'Female', '1995-06-06', '1234567895', 'eve.miller@example.com', '303 Cedar St'),
-('Frank', 'Wilson', 'Male', '1982-07-07', '1234567896', 'frank.wilson@example.com', '404 Elm St'),
+('Eve', 'Miller', 'Female', '1995-06-06', '1234567895', NULL, '303 Cedar St'),
+('Frank', 'Wilson', 'Male', '1982-07-07', '1234567896', NULL, '404 Elm St'),
 ('Grace', 'Moore', 'Female', '2012-08-08', '1234567897', 'grace.moore@example.com', '505 Ash St'),
 ('Hank', 'Taylor', 'Male', '2000-09-09', '1234567898', 'hank.taylor@example.com', '606 Willow St'),
 ('Ivy', 'Anderson', 'Female', '1978-10-10', '1234567899', 'ivy.anderson@example.com', '707 Spruce St'),
@@ -79,16 +79,16 @@ INSERT INTO HOSPITAL_DOCTORS (departement_id, last_name, specialization, phone_n
 -- Insert data into HOSPITAL_ADMISSIONS
 INSERT INTO HOSPITAL_ADMISSIONS (patient_id, room_id, admission_date, discharge_date) VALUES
 (1, 1, '2024-01-01', '2024-01-10'),
-(2, 2, '2024-01-02', '2024-01-11'),
+(2, 2, '2024-12-02', '2024-02-11'),
 (3, 3, '2024-01-03', '2024-01-12'),
-(4, 4, '2024-01-04', '2024-01-13'),
+(4, 4, '2024-12-04', '2024-01-13'),
 (5, 5, '2024-01-05', '2024-01-14'),
 (6, 6, '2024-01-06', '2024-01-15'),
-(7, 7, '2024-01-07', '2024-01-16'),
+(7, 7, '2024-12-07', '2024-01-16'),
 (8, 8, '2024-01-08', '2024-01-17'),
-(9, 9, '2024-01-09', '2024-01-18'),
+(9, 9, '2024-12-09', '2024-01-18'),
 (10, 10, '2024-01-10', '2024-01-19'),
-(11, 11, '2024-01-11', '2024-01-20'),
+(11, 11, '2024-12-11', '2024-01-20'),
 (12, 12, '2024-01-12', '2024-01-21');
 
 -- Insert data into HOSPITAL_PRESCRIPTIONS
@@ -127,11 +127,11 @@ INSERT INTO HOSPITAL_APPOINTMENTS (doctor_id, patient_id, appointment_date, appo
 (2, 2, '2024-01-02', '10:00:00'),
 (3, 3, '2024-01-03', '11:00:00'),
 (4, 4, '2024-01-04', '12:00:00'),
-(5, 5, '2024-01-05', '13:00:00'),
+(5, 5, '2024-01-05', '13:22:00'),
 (6, 6, '2024-01-06', '14:00:00'),
 (7, 7, '2024-01-07', '15:00:00'),
-(8, 8, '2024-01-08', '16:00:00'),
+(8, 8, '2024-01-08', '16:30:00'),
 (9, 9, '2024-01-09', '17:00:00'),
 (10, 10, '2024-01-10', '18:00:00'),
 (11, 11, '2024-01-11', '19:00:00'),
-(12, 12, '2024-01-12', '20:00:00');
+(12, 12, '2024-01-12', '17:34:00');
