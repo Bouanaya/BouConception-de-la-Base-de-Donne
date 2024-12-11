@@ -21,14 +21,13 @@ SELECT * FROM hospital_doctors LIMIT 3 ;
 SELECT * FROM hospital_patients WHERE date_of_birth > '2000-01-01'
 
 -- challenge 7
-SELECT * FROM hospital_doctors WHERE specialization ='Cardiology' OR   specialization = 'Neurology'
+SELECT * FROM hospital_doctors WHERE specialization ='Cardiology' OR  specialization = 'Neurology'
 
 -- challenge 8
 SELECT * FROM hospital_admissions  WHERE admission_date BETWEEN '2024-12-1' AND '2024-12-7'
 
 -- challenge 9 
-SELECT * FROM hospital_patients ;
-
+-- SELECT * FROM hospital_patients ;
 ALTER Table hospital_patients 
 ADD catégorisant VARCHAR(50);
 -- SELECT FLOOR(DATEDIFF(CURDATE(), date_of_birth) / 365.25) FROM hospital_patients;
@@ -42,10 +41,10 @@ FROM hospital_patients;
 
 -- challenge 10
 -- SELECT * FROM hospital_departments;
-SELECT COUNT(*) AS total_appointments FROM hospital_appointments
+SELECT COUNT(*) AS total_appointments FROM hospital_appointments;
 -- challenge 11
-SELECT * FROM hospital_doctors;
-SELECT * FROM hospital_departments
+-- SELECT * FROM hospital_doctors;
+SELECT * FROM hospital_departments;
 
 SELECT COUNT(doctor_id),departement_id AS n_doctor
 FROM hospital_doctors
@@ -53,7 +52,7 @@ GROUP BY departement_id;
 -- challenge 12
 SELECT * FROM hospital_patients ;
 
-SELECT AVG(TIMESTAMPDIFF(YEAR ,date_of_birth,CURDATE())) FROM  hospital_patients
+SELECT AVG(TIMESTAMPDIFF(YEAR ,date_of_birth,CURDATE())) AS moyen FROM  hospital_patients
 
 -- challenge 13
 SELECT appointment_date, appointment_time 
@@ -62,6 +61,7 @@ ORDER BY appointment_date DESC, appointment_time DESC
 LIMIT 1;
 
 -- challenge 14 
+SELECT admission_id FROM hospital_admissions;
 SELECT room_id, COUNT(*) AS total_admissions
 FROM HOSPITAL_ADMISSIONS
 GROUP BY room_id;
